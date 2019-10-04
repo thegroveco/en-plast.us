@@ -1,0 +1,41 @@
+.content-info {
+  margin-top: -20px;
+  padding: 115px 25px;
+  background: $bg-footer;
+  color: #919090;
+
+  a:hover {
+    color: #fff;
+  }
+
+  .container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+
+    .widget {
+      font-size: 14px;
+      margin: 0 0 20px 0;
+
+      @include breakpoint(sm) {
+        width: 33%;
+        padding: 0 35px 0 0;
+
+        &.text-2 {
+          padding-right: 100px;
+        }
+      }
+
+      h3 {
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 14px;
+      }
+
+      .svg-inline--fa {
+        font-size: 24px;
+        margin-right: 10px;
+      }
+    }
+  }
+}

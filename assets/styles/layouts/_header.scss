@@ -1,0 +1,56 @@
+.logo {
+  display: block;
+  position: relative;
+  width: 183px;
+  margin: 5px 0 0 0;
+
+  @include breakpoint(sm) {
+    //width: 302px;
+  }
+}
+
+.navbar-dark {
+  position: fixed;
+  z-index: 4;
+  width: 100%;
+  padding-top: 0;
+  background: $bg-dark !important;
+  transition: background-color .25s ease-out;
+  min-height: 75px;
+  
+  &.at-rest {
+    @include breakpoint(md) {
+      background: transparent !important;
+    }
+  }
+
+  .navbar-nav .nav-item {
+    margin: 0 0 0 25px;
+  }
+
+  .navbar-nav .nav-item .nav-link {
+    padding: 5px 0;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: $body-type;
+    transition: color 0.5s ease;
+    border-bottom: 2px solid transparent;
+  }
+
+  .navbar-nav .nav-item .nav-link:hover {
+    color: $green;
+  }
+
+  .navbar-nav .nav-item.active .nav-link {
+    border-bottom: 2px solid $green;
+  }
+   
+}
+
+.navbar-toggler {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}

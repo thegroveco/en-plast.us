@@ -1,0 +1,11 @@
+.btn {
+  background: $green;
+  color: #333 !important;
+  border-radius: 0;
+  text-transform: uppercase;
+
+  &.reverse {
+    background: #333;
+    color: $green !important;
+  }
+}
